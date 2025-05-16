@@ -8,5 +8,7 @@ These are examples of how a natural language question would become a SQL query f
 
 | Question                                                                          | SQL query |
 |:---                                                                               |:---       |
-| Azure Data Manager for Energy                                                 |           |
-| https://azure.microsoft.com/en-us/products/data-manager-for-energy                |           |
+| Azure Data Manager for Energy                                                 |  SELECT COUNT(*) AS NumberOfProducingWellbores
+FROM [dbo].[adme_osdu_wks_master_data_Wellbore_view]
+WHERE extSLB_WellboreStatus like '%producing%'         |
+
