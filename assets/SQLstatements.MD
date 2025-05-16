@@ -1,7 +1,9 @@
 # SQL statements to flatten JSON structures as Views
 Flattening JSON-based structures is a crucial step in preparing data for analytics because it transforms complex, nested data into a more accessible, tabular format. Most analytical tools and platforms are optimized for flat, table-like structures where each row represents a single record and each column represents a distinct attribute. Nested JSON, with its hierarchical layers and embedded arrays or objects, can be difficult to query directly and often requires additional processing to extract meaningful insights. By flattening the data, analysts can simplify querying, improve performance, and ensure compatibility with data warehouses and business intelligence tools. This transformation also aids in data modeling, making relationships between variables more transparent and enabling more efficient feature engineering for machine learning. Furthermore, flat structures are easier to validate and debug, which enhances data quality and reliability. Overall, flattening JSON structures streamlines the analytical workflow and unlocks the full potential of the data.
 <br>
-
+The following SQL statements will help you flatten your JSON structures on the bronze level mirrored data from Azure Data Manager for Energy into a Fabric
+<br>
+## Basin WKS Master
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Basin_view]
 AS SELECT
@@ -13,7 +15,7 @@ FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Basin:1.2.0'
 ```
 <br>
-
+## Field WKS Master
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Field_view] AS
 SELECT
@@ -27,4 +29,5 @@ SELECT
 FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Field:1.1.0'
 ```
+## Basin WKS Master
 
