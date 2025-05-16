@@ -9,4 +9,4 @@ These are examples of how a natural language question would become a SQL query f
 | Question                                                                          | SQL query |
 |:---                                                                               |:---       |
 | How many wellbores are currently producing?                                       |  SELECT COUNT(*) AS NumberOfProducingWellbores FROM [dbo].adme_osdu_wks_master_data_Wellbore_view] WHERE extSLB_WellboreStatus like '%producing%'         |
-|:---                                                                               |:---       |
+| What is the number of wellbores that are onshore?                                 | SELECT COUNT(*) AS OnshoreWellboreCount  FROM [dbo].[adme_osdu_wks_master_data_Wellbore_view]  WHERE OperatingEnvironmentID like '%Onshore%' |
