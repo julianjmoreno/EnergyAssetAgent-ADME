@@ -1,15 +1,18 @@
+> [!IMPORTANT]  
+> The conntent and views expressed here are personal and meant for information/education purposes only and not representative of my employer directly or indirectly and not investment advice. Any mention of company names are for illustrative examples only.
+> 
 # Chat with my Energy Asset Data
-This solution accelerator is based on work delivered by Julian Moreno (Microsoft), Vinay Damisetty (Microsoft), Mahesh Balusa (Microsoft) and Charles Zipp (Microsoft).
-
-OSDU is an initiative aimed at creating a unified, open-source data platform specifically for the energy industry. OSDU ensures that data can be easily shared and used across different software platforms and tools, reducing the silos that often exist within organizations.
-
 Azure Data Manager for Energy brings together the power of the Microsoft Cloud with the open, standards-based OSDU® Data Platform and a growing Partner Ecosystem in a fully-managed PaaS solution that simplifies implementation and speeds time to market. 
 
 In addition to the large structured sets of subsurface data like Wells - well logs, wellbore trajectories, wellbore markers; Seismic, Reservoir data and others ingested on Azure Data Manager for Energy, Energy Companies also have unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, available on other storage systems. End-users are required to bring together structured & unstructured data to unveil insights and properly evaluate their Energy Assets.
 
-This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch our "Chat with your Energy Asset" Sizzler.
+This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch the "Chat with your Energy Asset" Sizzler.
 
-https://github.com/user-attachments/assets/5d7d0336-b7ba-4033-bc75-e95d012a7e08
+
+
+https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
+
+
 
 ## Important
 Before you deep dive, we strongly recommend you get familiar with the following subjects so you better understand the reasons behind and the value proposition of this solution accelerator:
