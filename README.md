@@ -13,11 +13,11 @@ https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
 ## Before you start
 If you would like to get a live demonstration of the solution and some guidance, please feel free to request it here:
 
-[![Button Shield]][Shield1]
+[![Button Shield1]][Shield1]
 <br>
 
 <!---------------------------------------------------------------------------->
-[Button Shield]: https://img.shields.io/badge/Request_Your_Personal_Demo_Here-37a779?style=for-the-badge
+[Button Shield1]: https://img.shields.io/badge/Request_Your_Personal_Demo_Here-37a779?style=for-the-badge
 [License]: LICENSE
 [Shield1]: https://forms.office.com/r/Lst1gETaQm
 [KBD]: Types/KBD.md
@@ -26,7 +26,7 @@ If you would like to get a live demonstration of the solution and some guidance,
 ## Important Reading
 Before you deep dive, we strongly recommend you get familiar with the following subjects so you better understand the reasons behind and the value proposition of this solution accelerator:
 
-|                                                                                   |
+|  Please get familiar with the following subjects                                  |
 |:---                                                                               |
 | **Azure Data Manager for Energy**                                                 |
 | https://azure.microsoft.com/en-us/products/data-manager-for-energy                |
