@@ -3,7 +3,9 @@ Flattening JSON-based structures is a crucial step in preparing data for analyti
 <br>
 The following SQL statements will help you flatten your JSON structures on the bronze level mirrored data from Azure Data Manager for Energy into a Fabric
 <br>
+
 ## Basin OSDU WKS Master
+
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Basin_view]
 AS SELECT
@@ -14,8 +16,11 @@ AS SELECT
 FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Basin:1.2.0'
 ```
+
 <br>
+
 ## Field WKS Master
+
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Field_view] AS
 SELECT
@@ -29,8 +34,11 @@ SELECT
 FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Field:1.1.0'
 ```
+
 <br>
+
 ## Well WKS Master
+
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Well_view] AS
 SELECT
@@ -76,7 +84,6 @@ SELECT
         ELSE JSON_VALUE([data], '$.GeoContexts[2].FieldID')
     END AS GeoPoliticalEntity_Field,
 
-
     -- Vertical Measurements
     TRY_CONVERT(FLOAT, JSON_VALUE([data], '$.VerticalMeasurements[0].VerticalMeasurement')) AS VerticalMeasurement_REF,
     JSON_VALUE([data], '$.VerticalMeasurements[0].VerticalMeasurementID') AS VerticalMeasurementID_REF,
@@ -91,8 +98,11 @@ SELECT
 FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Well:1.0.0'
 ```
+
 <br>
+
 ## Wellbore WKS Master
+
 ```markdown
 create view adme_osdu_wks_master_data_Wellbore_view as
 SELECT
@@ -149,8 +159,11 @@ SELECT
 FROM [OSDU_LAKE].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Wellbore:1.5.0'
 ```
+
 <br>
+
 ## WellboreMarketSet Work Product Component
+
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_work-product_component_WellboreMarkerSet_view]
 AS SELECT
