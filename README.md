@@ -190,7 +190,7 @@ Lets now add some examples of how a natural language question would become a SQL
 
 Here are a sample of the SQL queries and corresponding natural language question you could use, but feel free to incorporate more.<br><br>
 
-Sample SQL Queries<br><br>
+[SAMPLE SQL QUERIES FOR DATA AGENT](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SampleSqlScripts-DataAgent.MD)<br><br>
 
 With this we are ready to test our “Data Agent”. Let us ask “How many wellbores by field in Taranaki Basin?”. This query will require data from Wellbores, Fields and Basin…
 
