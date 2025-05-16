@@ -14,8 +14,6 @@
 [Shield1]: https://1drv.ms/f/c/f8141d50838d7532/Eob9KNiUh3ZJlhEttOmWwjkBT24TTu3uD1d9Lrib5-ILRQ?e=ouSPJg
 [KBD]: Types/KBD.md
 [#]: #
-<br>
-<br>
 
 ## Ingested dateset into Azure Data Manager for Energy
 After the dataset have been made available on your Azure environmet, where you have deployed Azure Data Manager for Energy, please acces the follow codebase to help accelerate the ingestion of Wellbore and all the corresponding dependencies into Azure Data Manager for Energy using a simple Jupyter notebook. <br><br>
