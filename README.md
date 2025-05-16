@@ -227,7 +227,7 @@ Start by providing a meaningful name, description… as well as an icon !!! We w
 ***Copilot Agent Instructions***<br>
 Similar to the Data Agent AI Instructions, Copilot Agent Instructions will direct the behavior of the agent, including its tasks and how it completes them. Here is a sample set of instructions that we have used to set up the solution.<br><br>
 
-{Copilot Agent Instructions}<br><br>
+[{SAMPLE COPILOT AGENT INSTRUCTIONS}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/CopilotAgent-Instructions.MD)<br><br>
 
 ***Adding knowledge sources to your Copilot Agent***<br>
 Now you would be able to add data, files, and other resources that your agent will use to learn. These sources form the basis for your agent's responses. Let’s click “Add Knowledge” and add our sources.
