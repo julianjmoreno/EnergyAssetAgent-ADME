@@ -182,7 +182,7 @@ Let start with **“AI Instructions”** by click on corresponding option on the
 
 Here are a sample of the instructions you could use, but feel free to incorporate more details.<br><br>
 
-{Sample AI Instructions} <br><br>
+[{SAMPLE AI INSTRUCTIONS FOR YOUR DATA AGENT}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SampleAI-Instructions-DataAgent.MD) <br><br>
 
 Lets now add some examples of how a natural language question would become a SQL query for your data on the “Example queries” on the top of the Data Agent Explorer. The data agent will automatically select up to three valid examples to share with the model each time it handles a user question.
 
