@@ -6,10 +6,6 @@ Azure Data Manager for Energy brings together the power of the Microsoft Cloud w
 
 In addition to the large structured sets of subsurface data like Wells - well logs, wellbore trajectories, wellbore markers; Seismic, Reservoir data and others ingested on Azure Data Manager for Energy, Energy Companies also have unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, available on other storage systems. End-users are required to bring together structured & unstructured data to unveil insights and properly evaluate their Energy Assets.
 
-This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch the "Chat with your Energy Asset" Sizzler.
-
-https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
-
 ## Before you start
 If you would like to get a live demonstration of the solution and some guidance, please feel free to request it here:
 
