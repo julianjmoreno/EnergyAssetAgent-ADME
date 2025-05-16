@@ -146,7 +146,7 @@ Flattening JSON data structures is important for analytics because it transforms
 
 The following SQL statements / scripts will help you flatten these JSON structures and create Lakehouse Views per OSDU kind as required.<br><br>
 
-{Scripts Here}<br><br>
+[{SQL SCRIPTS TO FLATTEN JSON STRUCTURES}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SQLstatements.MD)<br><br>
 
 Once SQL statements / scripts are executed, you will find a series of Lakehouse Views that makes easier operations like joins, merges, and pivoting are much easier on flat data, reducing cognitive load when exploring or debugging datasets.
 
