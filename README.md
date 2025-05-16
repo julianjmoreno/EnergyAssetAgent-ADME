@@ -62,7 +62,7 @@ To access the data, the solution uses “Knowledge Sources” that points to:
    As mentioned before, you are welcome to ingest your own data or use data already ingested in your Azure Data Manager for Energy instance. If you need help ingesting your own data, read more in our knowledge base here:<br>
     https://learn.microsoft.com/en-us/azure/energy-data-services/ <br> <br>
     We have made available a prepared dataset with data from New Zealand Petroleum Exploration Data Pack ready to ingest in your Azure Data Manager for Energy instance. Please follow the ingestion instructions here:<br>
-   https://github.com/microsoft/EnergyAssetDataChat/blob/main/assets/ingestDemoDatasetsADME.MD<br> <BR>
+   https://github.com/microsoft/julianjmoreno/blob/main/assets/ingestDemoDatasetsADME.MD<br> <BR>
   <strong>Note:</strong> The dataset used in this solution / demo is &#169; Crown Copyright and have been reproduce with the permision from the New Zealand Petroleum and Minerals website at www.nzpam.govt.nz.</p>
   </li>
   <li> <p> <strong>Deploy “ADME-Fabric-Connector”</strong> <br>
