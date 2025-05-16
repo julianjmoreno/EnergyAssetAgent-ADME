@@ -10,7 +10,20 @@ This solution accelerator leverages the full power of Agentic AI to showcase the
 
 https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
 
-## Important
+## Before you start
+If you would like to get a live demonstration of the solution and some guidance, please feel free to request it here:
+
+[![Button Shield]][Shield]
+<br>
+
+<!---------------------------------------------------------------------------->
+[Button Shield]: https://img.shields.io/badge/Request_Your_Personal_Demo_Here-37a779?style=for-the-badge
+[License]: LICENSE
+[Shield]: https://forms.office.com/r/Lst1gETaQm
+[KBD]: Types/KBD.md
+[#]: #
+
+## Important Reading
 Before you deep dive, we strongly recommend you get familiar with the following subjects so you better understand the reasons behind and the value proposition of this solution accelerator:
 
 |                                                                                   |
@@ -67,14 +80,14 @@ To access the data, the solution uses “Knowledge Sources” that points to:
   <li> <p> <strong>Deploy “ADME-Fabric-Connector”</strong> <br>
    Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
     https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
-    <strong>Note:</strong> You may need to request access to this "Preview" capability<BR>
+    <strong>Note:</strong> If you encounter a "File Not Found" error, you may need to request access to this "Preview" capability<BR>
 
 
 [![Button Shield]][Shield]
 <br>
-<br>
+
 <!---------------------------------------------------------------------------->
-[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
+[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
 [License]: LICENSE
 [Shield]: https://forms.office.com/r/Lst1gETaQm
 [KBD]: Types/KBD.md
