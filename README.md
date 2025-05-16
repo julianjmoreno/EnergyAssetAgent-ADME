@@ -4,49 +4,11 @@
 # Chat with my Energy Asset Data
 Azure Data Manager for Energy brings together the power of the Microsoft Cloud with the open, standards-based OSDU® Data Platform and a growing Partner Ecosystem in a fully-managed PaaS solution that simplifies implementation and speeds time to market. 
 
-
-# Buttons
-         
-**Links  ➞  Buttons**
-
-<br>
-<br>
-
-[<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
-
-[![Button Shield]][Shield]
-
-</div>
-
-<br>
-<br>
-
-
-<!---------------------------------------------------------------------------->
-
-[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
-
-[License]: LICENSE
-[Shield]: Types/Shield.md
-[KBD]: Types/KBD.md
-[#]: #
-
-
-<!---------------------------------[ Badges ]---------------------------------->
-
-[Badge License]: https://img.shields.io/badge/-BY_SA_4.0-ae6c18.svg?style=for-the-badge&labelColor=EF9421&logoColor=white&logo=CreativeCommons
-[Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
-
-
 In addition to the large structured sets of subsurface data like Wells - well logs, wellbore trajectories, wellbore markers; Seismic, Reservoir data and others ingested on Azure Data Manager for Energy, Energy Companies also have unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, available on other storage systems. End-users are required to bring together structured & unstructured data to unveil insights and properly evaluate their Energy Assets.
 
 This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch the "Chat with your Energy Asset" Sizzler.
 
-
-
 https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
-
-
 
 ## Important
 Before you deep dive, we strongly recommend you get familiar with the following subjects so you better understand the reasons behind and the value proposition of this solution accelerator:
@@ -106,7 +68,22 @@ To access the data, the solution uses “Knowledge Sources” that points to:
    Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
     https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
     <strong>Note:</strong> You may need to request access to this "Preview" capability<BR>
-    <a href="https://forms.office.com/r/Lst1gETaQm">Request Access Here!!!</a></p>
+
+
+[![Button Shield]][Shield]
+<br>
+<br>
+<!---------------------------------------------------------------------------->
+[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
+[License]: LICENSE
+[Shield]: https://forms.office.com/r/Lst1gETaQm
+[KBD]: Types/KBD.md
+[#]: #
+
+
+
+   
+   
   </li>
   <li> <p> <strong>Make available your unstructured data in SharePoint</strong> <br>
    Make sure that unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, are available on a SharePoint site / folder of your preferences. Please remember that the Agent will respect the entitlement / secutiry configuration in place.<br>
