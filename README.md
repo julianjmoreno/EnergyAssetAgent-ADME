@@ -88,13 +88,9 @@ Set up a dedicated environment to host and manage your agent securely.<BR>
 ![alt text](assets/images/ADME2Fabric_createEnvFull.png)
 
 **3.- Provide System Administrator privileges** to the users who would be creating the agent on the environment. <br>
-{IMAGE MISSING HERE} <br>
 <br>
-**4.- Switch to the new environment created in Power Automate.** <br>
-{IMAGE MISSING HERE} <br>
-<br>
-**5.-Create a new solution.**<br>
-{IMAGE MISSING HERE}
+4.- Switch to the new environment created in Power Automate and **create a new solution.**<br>
+![alt text](assets/images/ADME2Fabric_PowerAppsSolutions.png)
 
 ### Get knowledge sources ready for your Copilot Agent
 In the context of Copilot Agents, "knowledge sources" refer to the external or internal data and tools that an agent can access to perform tasks, answer questions, or make decisions. These sources provide the factual grounding and contextual understanding that enhance the agent's capabilities beyond its base language model.<br>
