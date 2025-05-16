@@ -1,6 +1,9 @@
+> [!IMPORTANT]  
+> The conntent and views expressed here are personal and meant for information/education purposes only and not representative of my employer directly or indirectly and not investment advice. Any mention of company names are for illustrative examples only.
+> 
 ## Starter Prompts
 Here are some sample prompts based for the dataset available from New Zealand Petroleum Data Pach<br>
-> What can you tell me about Taranaki basin?
+> ```markdown What can you tell me about Taranaki basin? ```
 
 > What data is available in this dataset for Taranaki Basin? 
 
