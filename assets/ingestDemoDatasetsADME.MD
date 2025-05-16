@@ -13,5 +13,5 @@ Here are the public datasets we are making available for you:
   https://github.com/Azure/osdu-data-load-tno <BR> 
   </li>
   <li><strong>New Zealand Petroleum Exploration Data Pack</strong> <BR>
-  https://github.com/microsoft/EnergyAssetDataChat/blob/main/assets/ingestNZDataset.MD <br></li>
+  https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/ingestNZDataset.MD <br></li>
 </ul>
