@@ -8,5 +8,5 @@ These are examples of how a natural language question would become a SQL query f
 
 | Question                                                                          | SQL query |
 |:---                                                                               |:---       |
-| **Azure Data Manager for Energy**                                                 |           |
+| Azure Data Manager for Energy                                                 |           |
 | https://azure.microsoft.com/en-us/products/data-manager-for-energy                |           |
