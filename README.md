@@ -39,7 +39,8 @@ Before you deep dive, we strongly recommend you get familiar with the following 
 The following diagram illustrates the main components on this solution accelerator
 <br> <br>
 
-![Solution Accelerator Diagram](/assets/images/EnergyAssetDataChat_solDiagram.png "Solution Accelerator Diagram")
+
+![Solution Accelerator Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_solDiagram.png "Solution Accelerator Diagram")
 
 **A. The data landscape:** represented by structured data sources (like Azure Data Manager for Energy), including metadata and bulk data, and corresponding unstructured data sources (such as SharePoint or OneDrive, which contains data in the form of PDFs, Excel files, PowerPoint presentations, and other documents).
 
@@ -55,7 +56,7 @@ To access the data, the solution uses “Knowledge Sources” that points to:
 
 ### Reference architecture
 
-![Reference architecture Diagram](/assets/images/EnergyAssetDataChat_refArch.png "Reference architecture Diagram")
+![Reference architecture Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_refArch.png "Reference architecture Diagram")
 
 ## Getting Started
 ### Prerequisites 
@@ -81,16 +82,16 @@ To access the data, the solution uses “Knowledge Sources” that points to:
    Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
     https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
     <strong>Note:</strong> If you encounter a "File Not Found" error, you may need to request access to this "Preview" capability<BR>
-	  
-	[![Button Shield]][Shield]
-	<br>
-	
-	<!---------------------------------------------------------------------------->
-	[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
-	[License]: LICENSE
-	[Shield]: https://forms.office.com/r/Lst1gETaQm
-	[KBD]: Types/KBD.md
-	[#]: #
+
+ [![Button Shield]][Shield]
+<br>
+
+<!---------------------------------------------------------------------------->
+[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
+[License]: LICENSE
+[Shield]: https://forms.office.com/r/Lst1gETaQm
+[KBD]: Types/KBD.md
+[#]: #
  
   </li>
   <li> <p> <strong>Make available your unstructured data in SharePoint</strong> <br>
@@ -107,12 +108,12 @@ Set up a dedicated environment to host and manage your agent securely.<BR>
 <a href="https://admin.powerplatform.microsoft.com/manage/environments">https://admin.powerplatform.microsoft.com/manage/environments</a><br>
 <br>
 **2.- Create an environment**<br>
-![alt text](assets/images/ADME2Fabric_createEnvFull.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_createEnvFull.png)
 
 **3.- Provide System Administrator privileges** to the users who would be creating the agent on the environment. <br>
 <br>
 4.- Switch to the new environment created in Power Automate and **create a new solution.**<br>
-![alt text](assets/images/ADME2Fabric_PowerAppsSolutions.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_PowerAppsSolutions.png)
 
 ### Get knowledge sources ready for your Copilot Agent
 In the context of Copilot Agents, "knowledge sources" refer to the external or internal data and tools that an agent can access to perform tasks, answer questions, or make decisions. These sources provide the factual grounding and contextual understanding that enhance the agent's capabilities beyond its base language model.<br>
@@ -127,7 +128,7 @@ As a result of the deployment and execution of the ADME-Fabric Connector, the so
 <br>
 
 Please access your **Fabric Workspace** and click on the corresponding **Lakehouse**
-![alt text](assets/images/ADME2Fabric_Workspace.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_Workspace.png)
 
 You will see the **Lakehouse Explorer**<br>
 <br><br>
@@ -135,7 +136,7 @@ You will see the **Lakehouse Explorer**<br>
 ***Flatten OSDU JSON structures***<br>
 It is important to highlight that the data in Azure Data Manager for Energy is in JSON format, so when made available in the RAW Lakehouse in Microsoft Fabric, this remains identical but in a single table.
 
-![alt text](assets/images/ADME2Fabroc_bronzeLayer.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabroc_bronzeLayer.png)
 
 Flattening JSON data structures is important for analytics because it transforms complex, nested data into a tabular format that is easier to work with using common data analysis tools like Excel, SQL, or pandas in Python.<br><br>
 
@@ -145,7 +146,7 @@ The following SQL statements / scripts will help you flatten these JSON structur
 
 Once SQL statements / scripts are executed, you will find a series of Lakehouse Views that makes easier operations like joins, merges, and pivoting are much easier on flat data, reducing cognitive load when exploring or debugging datasets.
 
-![alt text](assets/images/ADME2Fabroc_bronzeLayerFlat.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabroc_bronzeLayerFlat.png)
 
 > [!NOTE]
 >  Please notice that these SQL statements / scripts have been created following the prepared dataset with data from New Zealand Petroleum Exploration Data Pack. Feel free to update these SQL statements / scripts accordingly.
@@ -155,25 +156,25 @@ A Data Agent in Microsoft Fabric is an AI-powered assistant that enables users t
 
 From your Fabric Workspace, select the option “New Item” and select the option “Data Agent”.
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME.png)
 
 Provide a name for your new Data Agent and you will land on the Data Agent Explorer
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-creation.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-creation.png)
 
 From the Agent Explorer, select Data Source selector and pick the corresponding Fabric Lakehouse
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-addSources.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-addSources.png)
 
 Once corresponding Lakehouse is selected, you will be able to see all your Lakehouse Tables and the Views you created with the “Flatten Data”
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-SourceSelected.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-SourceSelected.png)
 
 Select all the Lakehouse Views you created and let’s provide the data agent with an understanding of your data by writing detailed system prompt. We should explain which common topics the data source will have the answer and define any terminology or acronyms.<br><br>
 
 Let start with **“AI Instructions”** by click on corresponding option on the top of the **Data Agent Explorer**
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-AiInstructions.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-AiInstructions.png)
 
 Here are a sample of the instructions you could use, but feel free to incorporate more details.<br><br>
 
@@ -181,7 +182,7 @@ Here are a sample of the instructions you could use, but feel free to incorporat
 
 Lets now add some examples of how a natural language question would become a SQL query for your data on the “Example queries” on the top of the Data Agent Explorer. The data agent will automatically select up to three valid examples to share with the model each time it handles a user question.
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-SQLQueries.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-SQLQueries.png)
 
 Here are a sample of the SQL queries and corresponding natural language question you could use, but feel free to incorporate more.<br><br>
 
@@ -189,7 +190,7 @@ Here are a sample of the SQL queries and corresponding natural language question
 
 With this we are ready to test our “Data Agent”. Let us ask “How many wellbores by field in Taranaki Basin?”. This query will require data from Wellbores, Fields and Basin…
 
-![alt text](assets/images/ADME2Fabric_dataAgentADME-Test.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-Test.png)
 
 We are now ready to create our agent….<br><br>
 
@@ -197,25 +198,25 @@ We are now ready to create our agent….<br><br>
 For our solution we are going to use Copilot Studio, so navigate to here using the following URL:<br><br>
 <a href="https://copilotstudio.microsoft.com/">https://copilotstudio.microsoft.com/</a>
 
-![alt text](assets/images/CopilotStudio_Home.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Home.png)
 
 Make sure that the environment is the one you have created in previous steps.
 
-![alt text](assets/images/CopilotStudio_Env.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Env.png)
 
 Select the “Create” option on the left-hand side of the screen. You will see a “Create Assistant” that would allow you to follow an specific “Template” or “start from scratch”
 
-![alt text](assets/images/CopilotStudio_CreateNew.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateNew.png)
 
 Let’s start “from scratch”, to do that click the “New Agent” button.<br><br>
 
 You will land into the Copilot Agent “creation screen” by conversational assistance, lets skip and go to configure.
 
-![alt text](assets/images/CopilotStudio_CreateFirstScreen.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstScreen.png)
 
 Once conversational creation experience is skipped, you will see an screen to provide Agent name, description, instructions, connect knowledge sources, and optionally, define starter prompts to guide user interactions. 
 
-![alt text](assets/images/CopilotStudio_CreateFirstDetails.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstDetails.png)
 
 Start by providing a meaningful name, description… as well as an icon !!! We will now go setting up some instructions.
 
@@ -227,7 +228,7 @@ Similar to the Data Agent AI Instructions, Copilot Agent Instructions will direc
 ***Adding knowledge sources to your Copilot Agent***<br>
 Now you would be able to add data, files, and other resources that your agent will use to learn. These sources form the basis for your agent's responses. Let’s click “Add Knowledge” and add our sources.
 
-![alt text](assets/images/CopilotStudio_KnowSouce.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KnowSouce.png)
 
 As mentioned from the beginning, the idea is to bring structured and unstructured data together to provide responses around Energy Assets. We selected:<BR>
 	<ul>
@@ -237,7 +238,7 @@ As mentioned from the beginning, the idea is to bring structured and unstructure
 
 For SharePoint, click on the corresponding option on the “Add knowledge” screen to connect to SharePoint as knowledge source
 
-![alt text](assets/images/CopilotStudio_KsSharePoint.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KsSharePoint.png)
 
 > [!NOTE]
 > Content from SharePoint will only be available to authenticated end-users on your Company’s Tenant.
@@ -245,7 +246,7 @@ For SharePoint, click on the corresponding option on the “Add knowledge” scr
 <br>
 For the data mirrored from Azure Data Manager for Energy into Fabric Lakehouse, go to “Advanced” options
 
-![alt text](assets/images/CopilotStudio_KsFabric.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KsFabric.png)
 
 Select the “Microsoft Fabric” option and then your “Data Agent” would appear in the list of options.<br><br>
 
@@ -254,7 +255,7 @@ With the “Knowledge sources” already associated, you could click on “Creat
 ***Testing your Copilot Agent***
 Once your Agent in create you could start your tests and validate responses.
 
-![alt text](assets/images/CopilotStudio_AgentTest.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_AgentTest.png)
 
 On the right-hand side, red square, is where your prompts would be enters and responses would appear.<br><br>
 
@@ -262,21 +263,21 @@ In the middle, blue square, the whole processing would appear, and it would show
 
 Once you are satisfied with the responses, you could proceed to “Publish” your Agent
 
-![alt text](assets/images/CopilotStudio_Publish.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Publish.png)
 
 Once your Agent is published, you will be able to see it in your Copilot Chat UI.<br><br>
 
 Go to https://copilot.cloud.microsoft/ or https://m365.cloud.microsoft/chat and select the option Get Agents
 
-![alt text](assets/images/EnergyAssetDataChat_getAgent.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_getAgent.png)
 
 Find your Agent by name, using the search capabilities, or looking under the category “Built for your org” and click on it
 
-![alt text](assets/images/EnergyAssetDataChat_install.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_install.png)
 
 Now you could add your Agent to your environment and validate the agent from the Copilot Chat.
 
-![alt text](assets/images/EnergyAssetDataChat_ChatUI.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_ChatUI.png)
 
 You will see know the Copilot Agent available in Copilot Chat, Team and M365 apps. 
 
