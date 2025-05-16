@@ -13,6 +13,7 @@ FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Basin:1.2.0'
 ```
 <br>
+
 ```markdown
 CREATE VIEW [dbo].[adme_osdu_wks_master_data_Field_view] AS
 SELECT
@@ -26,3 +27,4 @@ SELECT
 FROM [osdu_lake].[dbo].[storage_records_bronze]
 WHERE [kind] = 'osdu:wks:master-data--Field:1.1.0'
 ```
+
