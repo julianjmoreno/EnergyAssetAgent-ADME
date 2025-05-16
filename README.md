@@ -287,4 +287,4 @@ You will see know the Copilot Agent available in Copilot Chat, Team and M365 app
 
 ## Sample Prompts
 Here are some sample promts for this dataset<br>
-https://github.com/microsoft/EnergyAssetDataChat/blob/main/chatSamplePrompts.MD<br><br>
+https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/chatSamplePrompts.MD<br><br>
