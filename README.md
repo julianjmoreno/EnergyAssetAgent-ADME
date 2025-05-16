@@ -6,6 +6,10 @@ Azure Data Manager for Energy brings together the power of the Microsoft Cloud w
 
 In addition to the large structured sets of subsurface data like Wells - well logs, wellbore trajectories, wellbore markers; Seismic, Reservoir data and others ingested on Azure Data Manager for Energy, Energy Companies also have unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, available on other storage systems. End-users are required to bring together structured & unstructured data to unveil insights and properly evaluate their Energy Assets.
 
+This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch the "Chat with your Energy Asset" Sizzler.
+
+https://github.com/user-attachments/assets/09fd3735-2097-4fc7-a11f-7535c54f2276
+
 ## Before you start
 If you would like to get a live demonstration of the solution and some guidance, please feel free to request it here:
 
@@ -50,6 +54,9 @@ To access the data, the solution uses “Knowledge Sources” that points to:
   <li>a SharePoint connector (featured) to the corresponding SharePoint site with New Zealand data</li>
 </ol>
 
+### Reference architecture
+
+![Reference architecture Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_refArch.png "Reference architecture Diagram")
 
 ## Getting Started
 ### Prerequisites 
@@ -60,13 +67,133 @@ To access the data, the solution uses “Knowledge Sources” that points to:
     https://www.nzpam.govt.nz/maps-geoscience/petroleum-datapack<br>
   <strong>Note:</strong> You could also use your own datasets.</p>
   </li>
+    <li> <p> <strong>Get an Azure Data Manager for Energy instance deployed</strong> <br>
+   With this QuickStart, you would be able to create an Azure Data Manager for Energy instance by using the Azure portal on a web browser.<br>
+    https://learn.microsoft.com/en-us/azure/energy-data-services/quickstart-create-microsoft-energy-data-services-instance</p>
+  </li>
+  <li> <p> <strong>Ingest your dataset in Azure Data Manager for Energy</strong> <br>
+   As mentioned before, you are welcome to ingest your own data or use data already ingested in your Azure Data Manager for Energy instance. If you need help ingesting your own data, read more in our knowledge base here:<br>
+    https://learn.microsoft.com/en-us/azure/energy-data-services/ <br> <br>
+    We have made available a prepared dataset with data from New Zealand Petroleum Exploration Data Pack ready to ingest in your Azure Data Manager for Energy instance. Please follow the ingestion instructions here:<br>
+   https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/ingestDemoDatasetsADME.MD<br> <BR>
+  <strong>Note:</strong> The dataset used in this solution / demo is &#169; Crown Copyright and have been reproduce with the permision from the New Zealand Petroleum and Minerals website at www.nzpam.govt.nz.</p>
+  </li>
+  <li> <p> <strong>Deploy “ADME-Fabric-Connector”</strong> <br>
+   Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
+    https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
+    <strong>Note:</strong> If you encounter a "File Not Found" error, you may need to request access to this "Preview" capability<BR>
+
+ [![Button Shield]][Shield]
+<br>
+
+<!---------------------------------------------------------------------------->
+[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
+[License]: LICENSE
+[Shield]: https://forms.office.com/r/Lst1gETaQm
+[KBD]: Types/KBD.md
+[#]: #
+ 
+  </li>
   <li> <p> <strong>Make available your unstructured data in SharePoint</strong> <br>
    Make sure that unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, are available on a SharePoint site / folder of your preferences. Please remember that the Agent will respect the entitlement / secutiry configuration in place.<br>
     </p>
   </li>
 </ol>
- 
+
 ## QuickStart
+### Create a Power Platform environment
+Set up a dedicated environment to host and manage your agent securely.<BR>
+<br>
+**1.- Navigate to Power Platform admin center**<br> 
+<a href="https://admin.powerplatform.microsoft.com/manage/environments">https://admin.powerplatform.microsoft.com/manage/environments</a><br>
+<br>
+**2.- Create an environment**<br>
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_createEnvFull.png)
+
+**3.- Provide System Administrator privileges** to the users who would be creating the agent on the environment. <br>
+<br>
+4.- Switch to the new environment created in Power Automate and **create a new solution.**<br>
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_PowerAppsSolutions.png)
+
+### Get knowledge sources ready for your Copilot Agent
+In the context of Copilot Agents, "knowledge sources" refer to the external or internal data and tools that an agent can access to perform tasks, answer questions, or make decisions. These sources provide the factual grounding and contextual understanding that enhance the agent's capabilities beyond its base language model.<br>
+<br>
+
+**1.- Unstructured data in SharePoint**<br>
+Make sure to provide access to the users who would be accessing the agent on the documents/ folders to which they need access. Copilot Agents honor security & entitlements provided by corresponding knowledge source.<br>
+<br>
+
+**2.- Structured data from Azure Data Manager for Energy**<br>
+As a result of the deployment and execution of the ADME-Fabric Connector, the solution delivers original data ingested in Azure Data Manager for Energy into a RAW Lakehouse in Microsoft Fabric as a "Bronze Level", following the "Medallion Architecture" approach.<br>
+<br>
+
+Please access your **Fabric Workspace** and click on the corresponding **Lakehouse**
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_Workspace.png)
+
+You will see the **Lakehouse Explorer**<br>
+<br><br>
+
+***Flatten OSDU JSON structures***<br>
+It is important to highlight that the data in Azure Data Manager for Energy is in JSON format, so when made available in the RAW Lakehouse in Microsoft Fabric, this remains identical but in a single table.
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabroc_bronzeLayer.png)
+
+Flattening JSON data structures is important for analytics because it transforms complex, nested data into a tabular format that is easier to work with using common data analysis tools like Excel, SQL, or pandas in Python.<br><br>
+
+The following SQL statements / scripts will help you flatten these JSON structures and create Lakehouse Views per OSDU kind as required.<br><br>
+
+[{SQL SCRIPTS TO FLATTEN JSON STRUCTURES}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SQLstatements.MD)<br><br>
+
+Once SQL statements / scripts are executed, you will find a series of Lakehouse Views that makes easier operations like joins, merges, and pivoting are much easier on flat data, reducing cognitive load when exploring or debugging datasets.
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabroc_bronzeLayerFlat.png)
+
+> [!NOTE]
+>  Please notice that these SQL statements / scripts have been created following the prepared dataset with data from New Zealand Petroleum Exploration Data Pack. Feel free to update these SQL statements / scripts accordingly.
+
+***Create a Fabric Data Agent***
+A Data Agent in Microsoft Fabric is an AI-powered assistant that enables users to interact with their organizational data using natural language queries. It's part of Microsoft Fabric's unified data platform and is designed to make data insights more accessible, especially for users who may not be data experts.<br><br>
+
+From your Fabric Workspace, select the option “New Item” and select the option “Data Agent”.
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME.png)
+
+Provide a name for your new Data Agent and you will land on the Data Agent Explorer
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-creation.png)
+
+From the Agent Explorer, select Data Source selector and pick the corresponding Fabric Lakehouse
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-addSources.png)
+
+Once corresponding Lakehouse is selected, you will be able to see all your Lakehouse Tables and the Views you created with the “Flatten Data”
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-SourceSelected.png)
+
+Select all the Lakehouse Views you created and let’s provide the data agent with an understanding of your data by writing detailed system prompt. We should explain which common topics the data source will have the answer and define any terminology or acronyms.<br><br>
+
+Let start with **“AI Instructions”** by click on corresponding option on the top of the **Data Agent Explorer**
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-AiInstructions.png)
+
+Here are a sample of the instructions you could use, but feel free to incorporate more details.<br><br>
+
+[{SAMPLE AI INSTRUCTIONS FOR YOUR DATA AGENT}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SampleAI-Instructions-DataAgent.MD) <br><br>
+
+Lets now add some examples of how a natural language question would become a SQL query for your data on the “Example queries” on the top of the Data Agent Explorer. The data agent will automatically select up to three valid examples to share with the model each time it handles a user question.
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-SQLQueries.png)
+
+Here are a sample of the SQL queries and corresponding natural language question you could use, but feel free to incorporate more.<br><br>
+
+[SAMPLE SQL QUERIES FOR DATA AGENT](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/SampleSqlScripts-DataAgent.MD)<br><br>
+
+With this we are ready to test our “Data Agent”. Let us ask “How many wellbores by field in Taranaki Basin?”. This query will require data from Wellbores, Fields and Basin…
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_dataAgentADME-Test.png)
+
+We are now ready to create our agent….<br><br>
+
 ### Create your Copilot Studio agent
 For our solution we are going to use Copilot Studio, so navigate to here using the following URL:<br><br>
 <a href="https://copilotstudio.microsoft.com/">https://copilotstudio.microsoft.com/</a>
