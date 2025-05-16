@@ -81,22 +81,17 @@ To access the data, the solution uses “Knowledge Sources” that points to:
    Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
     https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
     <strong>Note:</strong> If you encounter a "File Not Found" error, you may need to request access to this "Preview" capability<BR>
-
-
-[![Button Shield]][Shield]
-<br>
-
-<!---------------------------------------------------------------------------->
-[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
-[License]: LICENSE
-[Shield]: https://forms.office.com/r/Lst1gETaQm
-[KBD]: Types/KBD.md
-[#]: #
-
-
-
-   
-   
+	  
+	[![Button Shield]][Shield]
+	<br>
+	
+	<!---------------------------------------------------------------------------->
+	[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
+	[License]: LICENSE
+	[Shield]: https://forms.office.com/r/Lst1gETaQm
+	[KBD]: Types/KBD.md
+	[#]: #
+ 
   </li>
   <li> <p> <strong>Make available your unstructured data in SharePoint</strong> <br>
    Make sure that unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, are available on a SharePoint site / folder of your preferences. Please remember that the Agent will respect the entitlement / secutiry configuration in place.<br>
