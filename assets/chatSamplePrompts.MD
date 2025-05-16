@@ -3,7 +3,7 @@
 > 
 ## Starter Prompts
 Here are some sample prompts based for the dataset available from New Zealand Petroleum Data Pach<br>
-> ```markdown What can you tell me about Taranaki basin? ```
+> ``` What can you tell me about Taranaki basin? ```
 
 > What data is available in this dataset for Taranaki Basin? 
 
