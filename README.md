@@ -4,6 +4,40 @@
 # Chat with my Energy Asset Data
 Azure Data Manager for Energy brings together the power of the Microsoft Cloud with the open, standards-based OSDU® Data Platform and a growing Partner Ecosystem in a fully-managed PaaS solution that simplifies implementation and speeds time to market. 
 
+
+# Buttons
+         
+**Links  ➞  Buttons**
+
+<br>
+<br>
+
+[<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
+
+[![Button Shield]][Shield]
+
+</div>
+
+<br>
+<br>
+
+
+<!---------------------------------------------------------------------------->
+
+[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
+
+[License]: LICENSE
+[Shield]: Types/Shield.md
+[KBD]: Types/KBD.md
+[#]: #
+
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/-BY_SA_4.0-ae6c18.svg?style=for-the-badge&labelColor=EF9421&logoColor=white&logo=CreativeCommons
+[Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
+
+
 In addition to the large structured sets of subsurface data like Wells - well logs, wellbore trajectories, wellbore markers; Seismic, Reservoir data and others ingested on Azure Data Manager for Energy, Energy Companies also have unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, available on other storage systems. End-users are required to bring together structured & unstructured data to unveil insights and properly evaluate their Energy Assets.
 
 This solution accelerator leverages the full power of Agentic AI to showcase the integration of Copilot agents with energy data. Play the video below to watch the "Chat with your Energy Asset" Sizzler.
