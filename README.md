@@ -104,14 +104,17 @@ To access the data, the solution uses “Knowledge Sources” that points to:
 ### Create a Power Platform environment
 Set up a dedicated environment to host and manage your agent securely.<BR>
 <br>
+
 **1.- Navigate to Power Platform admin center**<br> 
 <a href="https://admin.powerplatform.microsoft.com/manage/environments">https://admin.powerplatform.microsoft.com/manage/environments</a><br>
 <br>
+
 **2.- Create an environment**<br>
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_createEnvFull.png)
 
 **3.- Provide System Administrator privileges** to the users who would be creating the agent on the environment. <br>
 <br>
+
 4.- Switch to the new environment created in Power Automate and **create a new solution.**<br>
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/ADME2Fabric_PowerAppsSolutions.png)
 
@@ -221,11 +224,13 @@ Once conversational creation experience is skipped, you will see an screen to pr
 Start by providing a meaningful name, description… as well as an icon !!! We will now go setting up some instructions.
 
 ***Copilot Agent Instructions***<br>
+
 Similar to the Data Agent AI Instructions, Copilot Agent Instructions will direct the behavior of the agent, including its tasks and how it completes them. Here is a sample set of instructions that we have used to set up the solution.<br><br>
 
 [{SAMPLE COPILOT AGENT INSTRUCTIONS}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/CopilotAgent-Instructions.MD)<br><br>
 
 ***Adding knowledge sources to your Copilot Agent***<br>
+
 Now you would be able to add data, files, and other resources that your agent will use to learn. These sources form the basis for your agent's responses. Let’s click “Add Knowledge” and add our sources.
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KnowSouce.png)
@@ -244,7 +249,7 @@ For SharePoint, click on the corresponding option on the “Add knowledge” scr
 > Content from SharePoint will only be available to authenticated end-users on your Company’s Tenant.
 
 <br>
-For the data mirrored from Azure Data Manager for Energy into Fabric Lakehouse, go to “Advanced” options
+For the data mirrored from Azure Data Manager for Energy into Fabric Lakehouse, go to “Advanced” options<br>
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KsFabric.png)
 
@@ -252,7 +257,7 @@ Select the “Microsoft Fabric” option and then your “Data Agent” would ap
 
 With the “Knowledge sources” already associated, you could click on “Create”.<br><br>
 
-***Testing your Copilot Agent***
+***Testing your Copilot Agent***<br>
 Once your Agent in create you could start your tests and validate responses.
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_AgentTest.png)
